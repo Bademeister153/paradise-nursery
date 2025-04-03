@@ -9,10 +9,10 @@ export default function LandingPage() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={getAssetPath("/placeholder.svg?height=1080&width=1920")}
+          src="https://images.unsplash.com/photo-1629815171288-ae4facbbd715?q=80&w=2069&auto=format&fit=crop"
           alt="Paradise Nursery Background"
           fill
-          className="object-cover brightness-50"
+          className="object-cover brightness-75"
           priority
         />
       </div>

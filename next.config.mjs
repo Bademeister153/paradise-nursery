@@ -18,7 +18,13 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
-    domains: ['github.com', 'bademeister153.github.io'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
+    domains: ['github.com', 'bademeister153.github.io', 'raw.githubusercontent.com', 'images.unsplash.com'],
   },
   output: 'export',
   // GitHub Pages Konfiguration
