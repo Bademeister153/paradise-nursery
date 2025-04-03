@@ -7,9 +7,9 @@ import { CartProvider } from "@/context/cart-context"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Paradise Nursery",
-  description: "Your one-stop destination for beautiful, healthy houseplants",
-    generator: 'v0.dev'
+  title: "Paradise Nursery | Ihr Pflanzenparadies",
+  description: "Your one-stop destination for beautiful, healthy houseplants | Ihr One-Stop-Ziel für schöne, gesunde Zimmerpflanzen",
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -25,7 +25,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-
-import './globals.css'

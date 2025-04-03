@@ -58,9 +58,7 @@ export default function CartPage() {
                 <div className="space-y-3">
                   <Button className="w-full">Checkout</Button>
                   <Link href="/products">
-                    <Button variant="outline" className="w-full">
-                      Continue Shopping
-                    </Button>
+                    <Button variant="outline" className="w-full">Continue Shopping</Button>
                   </Link>
                 </div>
               </div>

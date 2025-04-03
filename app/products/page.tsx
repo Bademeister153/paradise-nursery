@@ -31,7 +31,9 @@ export default function ProductsPage() {
 
           return (
             <div key={category} className="mb-12">
-              <h2 className="text-2xl font-semibold mb-4 capitalize">{category}</h2>
+              <h2 className="text-2xl font-semibold mb-4 capitalize">
+                {category}
+              </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {categoryPlants.map((plant) => (
                   <ProductCard key={plant.id} plant={plant} />

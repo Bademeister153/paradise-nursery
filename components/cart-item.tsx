@@ -32,13 +32,20 @@ export default function CartItem({ item }: CartItemProps) {
           className="h-8 w-8"
           onClick={() => decreaseQuantity(item.id)}
           disabled={item.quantity <= 1}
+          aria-label="Decrease quantity"
         >
           <Minus className="h-4 w-4" />
         </Button>
 
         <span className="w-8 text-center">{item.quantity}</span>
 
-        <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => increaseQuantity(item.id)}>
+        <Button 
+          variant="outline" 
+          size="icon" 
+          className="h-8 w-8" 
+          onClick={() => increaseQuantity(item.id)}
+          aria-label="Increase quantity"
+        >
           <Plus className="h-4 w-4" />
         </Button>
       </div>

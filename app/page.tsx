@@ -8,10 +8,10 @@ export default function LandingPage() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/placeholder.svg?height=1080&width=1920"
+          src="/images/leaf-background.jpg"
           alt="Paradise Nursery Background"
           fill
-          className="object-cover brightness-50"
+          className="object-cover brightness-75"
           priority
         />
       </div>

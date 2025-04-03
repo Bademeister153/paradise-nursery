@@ -40,6 +40,7 @@ export default function Header() {
                     {totalItems}
                   </span>
                 )}
+                <span className="sr-only">Cart</span>
               </Button>
             </Link>
           </div>
