@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button"
 import Header from "@/components/header"
 
 export default function LandingPage() {
+  const basePath = process.env.NODE_ENV === 'production' ? '/paradise-nursery' : '';
+  
   return (
     <div className="relative min-h-screen">
       <Header />
@@ -17,7 +19,7 @@ export default function LandingPage() {
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundImage: `url('/leaves-318743_1920.jpg')`,
+            backgroundImage: `url('${basePath}/leaves-318743_1920.jpg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             filter: 'brightness(0.5)'
