@@ -12,3 +12,8 @@ export function formatCurrency(amount: number): string {
   }).format(amount)
 }
 
+export function getAssetPath(path: string): string {
+  const basePath = process.env.BASE_PATH || '';
+  return `${basePath}${path.startsWith('/') ? path : `/${path}`}`;
+}
+

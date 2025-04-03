@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { getAssetPath } from "@/lib/utils"
 
 export default function LandingPage() {
   return (
@@ -8,7 +9,7 @@ export default function LandingPage() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/placeholder.svg?height=1080&width=1920"
+          src={getAssetPath("/placeholder.svg?height=1080&width=1920")}
           alt="Paradise Nursery Background"
           fill
           className="object-cover brightness-50"
@@ -25,7 +26,7 @@ export default function LandingPage() {
           our experts are dedicated to helping you create your own indoor paradise with plants that purify your air and
           brighten your space.
         </p>
-        <Link href="/products">
+        <Link href="/products" legacyBehavior={false}>
           <Button size="lg" className="text-lg px-8 py-6">
             Get Started
           </Button>
