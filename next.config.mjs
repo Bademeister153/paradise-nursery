@@ -16,6 +16,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  output: 'export',
+  // For GitHub Pages compatibility
+  basePath: process.env.NODE_ENV === 'production' ? '/paradise-nursery' : '',
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
