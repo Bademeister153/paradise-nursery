@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Paradise Nursery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 2rem;
+        }
+        
+        header {
+            max-width: 1200px;
+            margin: 0 auto 2rem;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2d6a4f;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #52b788;
+            margin-bottom: 2rem;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-image {
+            height: 200px;
+            background-color: #e9ecef;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .product-name {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #2d6a4f;
+        }
+        
+        .product-price {
+            font-size: 1.1rem;
+            color: #40916c;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        
+        .product-description {
+            color: #6c757d;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #40916c;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #2d6a4f;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 2rem;
+            text-decoration: none;
+            color: #40916c;
+            font-weight: bold;
+        }
+        
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Plants Collection</h1>
+        <p class="subtitle">Discover the perfect plant for your home</p>
+    </header>
+    
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1463936575829-25148e1db1b8?q=80&w=1470&auto=format&fit=crop');"></div>
+            <div class="product-info">
+                <h2 class="product-name">Monstera Deliciosa</h2>
+                <p class="product-price">$39.99</p>
+                <p class="product-description">The Swiss Cheese Plant with distinctive split leaves. Easy to care for and perfect for beginners.</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1637967886160-fd777028a0f9?q=80&w=1470&auto=format&fit=crop');"></div>
+            <div class="product-info">
+                <h2 class="product-name">Fiddle Leaf Fig</h2>
+                <p class="product-price">$49.99</p>
+                <p class="product-description">Stunning statement plant with large, violin-shaped leaves. Perfect for bright rooms.</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+        
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1620127807580-990c3ecebd14?q=80&w=1470&auto=format&fit=crop');"></div>
+            <div class="product-info">
+                <h2 class="product-name">Snake Plant</h2>
+                <p class="product-price">$29.99</p>
+                <p class="product-description">Nearly indestructible, air-purifying plant that thrives on neglect. Perfect for busy people.</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 3rem;">
+        <a href="../" class="nav-link">← Back to Home</a>
+    </div>
+</body>
+</html>
