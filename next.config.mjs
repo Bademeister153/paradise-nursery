@@ -17,8 +17,10 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  // For GitHub Pages compatibility
-  basePath: process.env.NODE_ENV === 'production' ? '/paradise-nursery' : '',
+  // GitHub Pages Konfiguration
+  basePath: '/paradise-nursery',
+  assetPrefix: '/paradise-nursery/',
+  trailingSlash: true,
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
