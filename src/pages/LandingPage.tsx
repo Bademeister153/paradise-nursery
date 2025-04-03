@@ -1,18 +1,16 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import { Link } from "react-router-dom"
+import backgroundImage from "../assets/background.jpg"
+import "../styles/tailwind.css"
 
 export default function LandingPage() {
   return (
     <div className="relative min-h-screen flex items-center justify-center">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/placeholder.svg?height=1080&width=1920"
+        <img
+          src={backgroundImage || `https://via.placeholder.com/1920x1080?text=Paradise+Nursery`}
           alt="Paradise Nursery Background"
-          fill
-          className="object-cover brightness-50"
-          priority
+          className="w-full h-full object-cover brightness-50"
         />
       </div>
 
@@ -25,10 +23,10 @@ export default function LandingPage() {
           our experts are dedicated to helping you create your own indoor paradise with plants that purify your air and
           brighten your space.
         </p>
-        <Link href="/products">
-          <Button size="lg" className="text-lg px-8 py-6">
+        <Link to="/products">
+          <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-md text-lg transition-colors">
             Get Started
-          </Button>
+          </button>
         </Link>
       </div>
     </div>

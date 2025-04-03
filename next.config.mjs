@@ -5,9 +5,6 @@ try {
   // ignore error
 }
 
-const isProduction = process.env.NODE_ENV === 'production';
-const basePath = isProduction ? '/paradise-nursery' : '';
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
@@ -18,21 +15,6 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-    ],
-    domains: ['github.com', 'bademeister153.github.io', 'raw.githubusercontent.com', 'images.unsplash.com'],
-  },
-  output: 'export',
-  // GitHub Pages Konfiguration
-  basePath,
-  assetPrefix: isProduction ? '/paradise-nursery/' : '',
-  trailingSlash: true,
-  env: {
-    BASE_PATH: basePath,
   },
   experimental: {
     webpackBuildWorker: true,
