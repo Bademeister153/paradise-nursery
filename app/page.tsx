@@ -10,12 +10,18 @@ export default function LandingPage() {
       
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/leaves-318743_1920.jpg"
-          alt="Paradise Nursery Background"
-          fill
-          className="object-cover brightness-50"
-          priority
+        <div 
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundImage: `url('/leaves-318743_1920.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'brightness(0.5)'
+          }}
         />
       </div>
 

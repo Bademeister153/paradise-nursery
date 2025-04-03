@@ -14,9 +14,12 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  output: 'export',
   images: {
     unoptimized: true,
   },
+  basePath: process.env.NODE_ENV === 'production' ? '/paradise-nursery' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/paradise-nursery/' : '',
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
